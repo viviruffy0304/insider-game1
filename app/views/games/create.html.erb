@@ -1,0 +1,23 @@
+
+
+<div class="player-list">
+  <h1>参加プレイヤー</h1>
+
+  
+  <div class="join_player">
+    <% @users.each do |user| %>
+      <span class="member"><%= user.name %></span><br>
+    <% end %>
+  </div>
+
+  
+
+  <a href="/games/new" class="cpu_btn">もう1人追加する</a>
+
+  <div class="next-options">
+    <a href="/options" class="cp_btn">次へ</a>
+  </div>
+
+
+
+</div>

@@ -1,0 +1,22 @@
+
+<div class="title-list">
+  <h1>今回のお題</h1>
+
+  
+  <div class="title-main">
+    <% @gms.each do |gm| %>
+      <span class="answer"><%= gm.title %></span><br>
+    <% end %>
+  </div>
+
+  
+
+  <a href="/title" class="cpu_btn">男に二言は無いだろ</a>
+
+  <div class="next-players">
+    <a href="/players" class="cp_btn">次へ</a>
+  </div>
+
+
+
+</div>

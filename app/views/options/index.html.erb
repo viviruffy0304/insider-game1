@@ -1,13 +1,33 @@
 <div class="game-option">
   <h1>ゲーム設定</h1>
 
-  <div class="gm-decide"></div>
 
-   <div class="insider-decide"></div>
+  <h2>GAME MASTER</h2>
 
-   <a href="/games/new" class="cpu_btn">戻る</a>
+<form action="/samples" class="new_sample" id="new_sample" method="post">
+  <div style="margin:0;padding:0">
+    <input name="authenticity_token" type="hidden" value="member" />
+  </div>
+  <select id="sample_user_id" name="sample[user_id]">
+    <option value="1">user1</option>
+    <option value="2">user2</option>
+    <option value="3">user3</option>
+    <option value="4">user4</option>
+    <option value="5">user5</option>
+  </select>
+  <input id="sample_submit" name="commit" type="submit" value="create" />
+</form>
+
+
+  <div class="insider-decide"></div>
+
+    <a href="/games/new" class="cpu_btn">戻る</a>
 
   <div class="next-titles">
     <a href="/titles" class="cp_btn">次へ</a>
+  </div>
+
+  <div class="next-times">
+    <a href="/times" class="cp_btn">次へ</a>
   </div>
 </div>

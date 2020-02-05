@@ -68,19 +68,19 @@ a.cp_btn:hover {
 	color: #da3c41;
 }
 
-.player-name {
+.player_name {
 	position: relative;
 	width: 80%;
 	margin: 40px 3%;
 }
-.player-name input[type='text'] {
+.player_name [type='text'] {
 	font: 15px/24px sans-serif;
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0.3em;
 	transition: 0.3s;
 	letter-spacing: 1px;
-	color: #aaaaaa;
+	color: black;
 	border: 1px solid #ffffff;
 	box-shadow: 1px 1px 2px 0 #707070 inset;
 	border-radius: 4px;
@@ -113,11 +113,11 @@ a.cp_btn:hover {
   margin: 0;
 }
 
-.submit-btn {
+.submit_btn {
 	position: relative;
 	z-index: 1;
 	padding: 1em;
-	width: 160px;
+	width: 700px;
 	line-height: 1.4;
 	cursor: pointer;
 	transition: color .3s cubic-bezier(.02,.01,.47,1),border-color .3s cubic-bezier(.02,.01,.47,1);
@@ -128,7 +128,7 @@ a.cp_btn:hover {
 	border-radius: 100px;
 	background: #fff;
 }
-.submit-btn:after, .submit-btn:before {
+.submit_btn:after, .submit_btn:before {
 	position: absolute;
 	z-index: -1;
 	top: 0;
@@ -139,41 +139,43 @@ a.cp_btn:hover {
 	transition: transform 0.15s cubic-bezier(0.02,0.01,0.47,1),opacity 0.15s cubic-bezier(0.02,0.01,0.47,1);
 	opacity: 0;
 }
-.submit-btn:before {
+.submit_btn:before {
 	background: #D81B60;
 	-webkit-transform: translate3d(-110%,-10%,0) skewX(-20deg);
 	transform: translate3d(-110%,-10%,0) skewX(-20deg);
 }
-.submit-btn:after {
+.submit_btn:after {
 	-webkit-transform: translate3d(110%,-10%,0) skewX(-20deg);
 	transform: translate3d(110%,-10%,0) skewX(-20deg);
 	background: #F06292;
 }
-.submit-btn:hover {
+.submit_btn:hover {
 	transition: all 0.5s cubic-bezier(0.02,0.01,0.47,1);
 	box-shadow: 0 1px 6px rgba(0,0,0,0.3);
 	color: #ffffff;
 	background: #E91E63;
 	border: 1px solid #F06292;
 }
-.submit-btn:hover:after, .submit-btn:hover:before {
+.submit_btn:hover:after, .submit_btn:hover:before {
 	transition: transform 0.25s cubic-bezier(0.02,0.01,0.47,1),opacity 0.25s cubic-bezier(0.02,0.01,0.47,1);
 	-webkit-transform: translate3d(50%,-10%,0) skewX(-20deg);
 	transform: translate3d(50%,-10%,0) skewX(-20deg);
 	opacity: 1;
 }
-.submit-btn:active {
+.submit_btn:active {
 	opacity: 0.5;
 	color: #F06292;
 }
-.submit-btn:focus {
+.submit_btn:focus {
 	border: 1px solid #F06292;
 	color: #F06292;
 }
-.submit-btn:focus:hover {
+.submit_btn:focus:hover {
 	color: #ffffff;
 	border: 1px solid #F06292;
 }
+
+
 
 a.cpu_btn {
 	position: relative;
