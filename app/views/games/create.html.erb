@@ -10,12 +10,40 @@
     <% end %>
   </div>
 
+<h2>GAME MASTER</h2>
+
+<form action="/samples" class="new_sample" id="new_sample" method="post">
+  <div style="margin:0;padding:0">
+    <input name="authenticity_token" type="hidden" value="member" />
+  </div>
   
+
+
+  <select id="sample_user_id" name="sample[user_id]">
+
+
+
+  
+    <option value="1"><span class="member"></span></option>
+    <option value="2"></option>
+    <option value="3"></option>
+    <option value="4"></option>
+    <option value="5"></option>
+    <option value="6"></option>
+    <option value="7"></option>
+    <option value="8"></option>
+    <option value="9"></option>
+    <option value="10"></option>
+  </select>
+  
+  <input id="sample_submit" name="commit" type="submit" value="create" />
+</form>
+
 
   <a href="/games/new" class="cpu_btn">もう1人追加する</a>
 
-  <div class="next-options">
-    <a href="/options" class="cp_btn">次へ</a>
+  <div class="next-titles">
+    <a href="/titles" class="cp_btn">次へ</a>
   </div>
 
 

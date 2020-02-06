@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   resources :votes, only: [:index]
 
-  
+  resources :results, only: [:index]
+
+  resources :newgames, only: [:index]
 
 end
