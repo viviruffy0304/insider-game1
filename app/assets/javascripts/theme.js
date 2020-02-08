@@ -41,7 +41,8 @@ themeList = {
  "不思議の国のアリス",
  "フランダースの犬",
  "アラジンと魔法のランプ",
- "青い鳥"
+ "青い鳥",
+ "泣いた赤鬼"
  ],
  'animal':[
  "アヒル",
@@ -155,7 +156,10 @@ themeList = {
  "ロッククライミング",
  "馬術・競馬",
  "綱引き",
- "縄跳び"
+ "縄跳び",
+ "eスポーツ",
+ "ウェイクボード",
+ "水上バイク"
  ],
  'mangaanime':[
  "ONE PIECE",
@@ -203,7 +207,8 @@ themeList = {
  "美味しんぼ",
  "北斗の拳",
  "名探偵コナン",
- "遊戯王"
+ "遊戯王",
+ "家庭教師ヒットマンREBORN!"
  ],
  'videogame':[
  "Wii Fit",
@@ -250,7 +255,8 @@ themeList = {
  "鉄拳",
  "桃太郎電鉄",
  "脳を鍛える大人のDSトレーニング",
- "妖怪ウォッチ"
+ "パズル＆ドラゴンズ",
+ "モンスターストライク"
  ]
  }
  
@@ -283,7 +289,7 @@ themeList = {
    theme = themeList[genre][Math.floor(Math.random()*(themeList[genre].length))];
    
    
-   document.getElementById('themestr').innerHTML = "　";
+   document.getElementById('themestr').innerHTML = "";
    document.getElementById('turnbutton').disabled = false;
    document.getElementById('themebutton').disabled = true;
  }

@@ -21,13 +21,13 @@ body{
 }
 #turnnum{
   font-size:48px;
-  background-color:white;
+  background-color:black;
   padding:0 10px;
-  color: #000;
+  color: white;
 }
 #themestr{
   font-size:48px;
-  background-color:white;
+  background-color:black;
   padding:0 10px;
-  color: #000;
+  color: white;
 }
