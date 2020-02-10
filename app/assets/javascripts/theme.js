@@ -257,6 +257,9 @@ themeList = {
  "脳を鍛える大人のDSトレーニング",
  "パズル＆ドラゴンズ",
  "モンスターストライク"
+ ],
+ 'human':[
+  "Mr.長浜"
  ]
  }
  
@@ -264,17 +267,20 @@ themeList = {
  player = 3;
  fakenum = 1;
  turnnum = 1;
- theme = "";
+ theme = 1;
  
  function init(){
    //順番リセット
    turnnum = 1;
+
    var obj = document.getElementById('turnnum');
+   
    obj.innerHTML = turnnum;
    
    //人数書き換え
    var p = document.getElementById('selectnum'); 
    var o = p.options;
+
    player = Number(o.item(p.selectedIndex).value);
    obj = document.getElementById('plnum');
    obj.innerHTML = player;
@@ -285,6 +291,7 @@ themeList = {
    //theme設定
    p = document.getElementById('selectgenre'); 
    o = p.options;
+
    var genre = o.item(p.selectedIndex).value;
    theme = themeList[genre][Math.floor(Math.random()*(themeList[genre].length))];
    
@@ -296,6 +303,7 @@ themeList = {
  
  function displayTheme(){  
    var obj = document.getElementById('themestr');
+
    if(turnnum == fakenum){
      obj.innerHTML = "×（あなたがアウトサイダーです）";
    }
@@ -307,20 +315,23 @@ themeList = {
  }
  function nextPlayer(){
    var obj = document.getElementById('themestr');
-   obj.innerHTML = "";
-   document.getElementById('turnbutton').disabled = false;
-   document.getElementById('themebutton').disabled = true;
-   
-   turnnum += 1;
-   obj = document.getElementById('turnnum');
-   if(turnnum > player){
-     obj.innerHTML = 'X';
-     document.getElementById('turnbutton').disabled = true;
-     document.getElementById('themebutton').disabled = true;
-   }
-   else{
+    obj.innerHTML = "";
+
+    document.getElementById('turnbutton').disabled = false;
+    document.getElementById('themebutton').disabled = true;
+    
+    turnnum += 1;
+    obj = document.getElementById('turnnum');
+
+  if(turnnum > player){
+    obj.innerHTML = 'X';
+
+    document.getElementById('turnbutton').disabled = true;
+    document.getElementById('themebutton').disabled = true;
+  }
+  else{
      obj.innerHTML = turnnum;
-   }
+  }
  }
  
  function debug(){
@@ -328,9 +339,11 @@ themeList = {
    
    p = document.getElementById('selectgenre'); 
    o = p.options;
+
    var genre = o.item(p.selectedIndex).value
    
    obj.innerHTML = '<ol>';
+
    for(var i=0; i<themeList[genre].length; i++){
      obj.innerHTML += '<li>'+themeList[genre][i]+'</li>';
    }
