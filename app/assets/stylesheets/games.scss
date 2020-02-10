@@ -28,7 +28,9 @@ a.next_btn {
 	color: rgb(255, 0, 0);
 	border: 2px solid rgb(255, 0, 0);
 	border-radius: 3px;
-	transition: .4s;
+  transition: .4s;
+  font-size: 20px;
+
 }
 a.next_btn:hover {
 	background: rgb(255, 0, 0);
