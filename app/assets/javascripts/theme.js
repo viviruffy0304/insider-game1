@@ -1,5 +1,8 @@
 themeList = {
-  'story':[
+  'human':[
+"Mr.長浜"
+],
+'story':[
  "桃太郎",
  "浦島太郎",
  "金太郎",
@@ -208,7 +211,9 @@ themeList = {
  "北斗の拳",
  "名探偵コナン",
  "遊戯王",
- "家庭教師ヒットマンREBORN!"
+ "家庭教師ヒットマンREBORN!",
+ "けいおん",
+ "テニスの王子様"
  ],
  'videogame':[
  "Wii Fit",
@@ -257,27 +262,25 @@ themeList = {
  "脳を鍛える大人のDSトレーニング",
  "パズル＆ドラゴンズ",
  "モンスターストライク"
- ],
- 'human':[
-  "Mr.長浜"
  ]
+ 
  }
  
- //グローバル変数と初期値
+ //変数と初期値
  player = 3;
  fakenum = 1;
  turnnum = 1;
  theme = 1;
  
  function init(){
-   //順番リセット
+    //順番のリセット
    turnnum = 1;
 
    var obj = document.getElementById('turnnum');
    
    obj.innerHTML = turnnum;
    
-   //人数書き換え
+  //人数書き換え
    var p = document.getElementById('selectnum'); 
    var o = p.options;
 
@@ -285,14 +288,15 @@ themeList = {
    obj = document.getElementById('plnum');
    obj.innerHTML = player;
    
-   //fake設定
+  //アウトサイダー設定
    fakenum = Math.floor(Math.random()*player)+1;
  
-   //theme設定
+   //ランダムテーマ設定
    p = document.getElementById('selectgenre'); 
    o = p.options;
 
    var genre = o.item(p.selectedIndex).value;
+   
    theme = themeList[genre][Math.floor(Math.random()*(themeList[genre].length))];
    
    
@@ -300,11 +304,13 @@ themeList = {
    document.getElementById('turnbutton').disabled = false;
    document.getElementById('themebutton').disabled = true;
  }
- 
+ //テーマ表示
  function displayTheme(){  
+
    var obj = document.getElementById('themestr');
 
    if(turnnum == fakenum){
+
      obj.innerHTML = "×（あなたがアウトサイダーです）";
    }
    else{
@@ -313,7 +319,9 @@ themeList = {
    document.getElementById('turnbutton').disabled = true;
    document.getElementById('themebutton').disabled = false;
  }
+ //次のプレイヤー
  function nextPlayer(){
+
    var obj = document.getElementById('themestr');
     obj.innerHTML = "";
 
@@ -332,20 +340,4 @@ themeList = {
   else{
      obj.innerHTML = turnnum;
   }
- }
- 
- function debug(){
-   var obj = document.getElementById('debug');
-   
-   p = document.getElementById('selectgenre'); 
-   o = p.options;
-
-   var genre = o.item(p.selectedIndex).value
-   
-   obj.innerHTML = '<ol>';
-
-   for(var i=0; i<themeList[genre].length; i++){
-     obj.innerHTML += '<li>'+themeList[genre][i]+'</li>';
-   }
-   obj.innerHTML += '</ol>';
  }
