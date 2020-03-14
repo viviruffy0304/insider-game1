@@ -1,14 +1,13 @@
 Rails.application.routes.draw do
   root to: 'games#index'
 
-  resources :games, only: [:index] 
-
-  resources :times, only: [:index]
-
-  resources :words, only: [:index]
-
-  resources :results, only: [:index]
-
-  resources :rules, only: [:index]
+  resources :games, only: [:index] do
+    collection do
+      get :times
+      get :words
+      get :results
+      get :rules
+    end
+  end
 
 end

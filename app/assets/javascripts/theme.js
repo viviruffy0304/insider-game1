@@ -1,7 +1,5 @@
 themeList = {
-  'human':[
-"Mr.長浜"
-],
+
 'story':[
  "桃太郎",
  "浦島太郎",
