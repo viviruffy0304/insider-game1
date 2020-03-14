@@ -1,24 +1,26 @@
-# README
+## OUTSIDER GAME
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+その場で遊べるパーティーゲームのアプリです。転職用のポートフォリオとして作成しました。
 
-Things you may want to cover:
+https://i.gyazo.com/04ac50303906ab33084687d98b887a2c.png
+## Description
+* ...
 
-* Ruby version
+## Demo
 
-* System dependencies
+## VS. 
 
-* Configuration
+## Requirement
 
-* Database creation
+## Usage
 
-* Database initialization
+## Install
 
-* How to run the test suite
+## Contribution
 
-* Services (job queues, cache servers, search engines, etc.)
+## Licence
 
-* Deployment instructions
 
+## Author
+* ...
 * ...
