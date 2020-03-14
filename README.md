@@ -1,25 +1,24 @@
+# README
 
-Name
-OUTSIDER GAME
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Overview
-https://github.com/viviruffy0304/insider-game
-## Description
+Things you may want to cover:
 
-## Demo
+* Ruby version
 
-## VS. 
+* System dependencies
 
-## Requirement
+* Configuration
 
-## Usage
+* Database creation
 
-## Install
+* Database initialization
 
-## Contribution
+* How to run the test suite
 
-## Licence
+* Services (job queues, cache servers, search engines, etc.)
 
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
+* Deployment instructions
 
-## Author
+* ...
