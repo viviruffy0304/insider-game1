@@ -1,24 +1,48 @@
-# README
+# OUTSIDER GAME
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アウトサイダーゲームというその場で遊べるパーティーゲームのアプリです。転職用のポートフォリオとして作成しました。
 
-Things you may want to cover:
 
-* Ruby version
+![アウトサイダーゲーム ](https://i.gyazo.com/04ac50303906ab33084687d98b887a2c.png)
 
-* System dependencies
+## ルールボタンを押していただければ、ルールを参照できます。
 
-* Configuration
+![ルール説明 ](https://i.gyazo.com/a41d7994f7c0936327a790bd17a7161b.png)
+![ルール説明２ ](https://i.gyazo.com/a41d7994f7c0936327a790bd17a7161b.png)
 
-* Database creation
+## 実装内容
 
-* Database initialization
+* STARTボタン押していただければ、ゲーム開始です。
+* 参加するプレイヤー人数とテーマを決めます。
+* 他のプレイヤーには見せずに、自分だけお題を確認します。
+* 全員が確認し終わった後、NEXTボタンで次に進みます。
+* 制限時間３分の話し合いが終わり次第、リザルト画面へを押していただき結果発表となります。
 
-* How to run the test suite
+## 特に見ていただきたい部分
 
-* Services (job queues, cache servers, search engines, etc.)
+* JavaScriptとjQueryを使い、お題表示や参加人数の非同期通信を行えるようにした。
+* カウントダウンタイマーを実装しました。
+* 全員がお題を見終わると、事故を防ぐためボタンを押せない工夫をしています。
 
-* Deployment instructions
+## 使用技術
 
-* ...
+### サーバーサイド：
+
+* ruby '2.6.3'
+
+
+### フロントエンド：
+
+* HTML
+* CSS
+
+* javaScript
+* jQuery
+
+## 機能一覧
+
+* 参加人数選択機能
+* テーマ選択機能
+* ランダムテーマ機能
+* アウトサイダーのランダム表示機能
+* カウントダウンタイマー機能
