@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+
+    <title>アウトサイダーゲーム</title>
+
+
+    <link rel="stylesheet" href="../normalize.css" type="text/css">
+    <link rel="stylesheet" href="../base.css" type="text/css">
+    <link rel="stylesheet" href="theme.css" type="text/css">
+
+    <script type="text/javascript" src="theme.js" charset="UTF-8"></script>
+
+  </head>
+
+  <body onload="init()">
+
+    <div id="container">
+      <div id="header">
+        <h1 title="アウトサイダーゲーム">アウトサイダーゲーム</h1>
+        <p>同期を巻き込みます</p>
+      </div>
+
+    <div id="main">
+      <hr/>
+      <h2>【テーマ指定＆リセット】</h2>
+      <form>
+
+        プレイヤー数：
+      <select id="selectnum" onChange="init()" >
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+      </select>人
+
+      テーマ：
+      <select id="selectgenre" onChange="init()">
+        <option value="story">童話</option>
+        <option value="animal">動物</option>
+        <option value="sports">スポーツ</option>
+        <option value="mangaanime">漫画・アニメ</option>
+        <option value="videogame">テレビゲーム</option>
+      </select>
+
+        <input type="button" value="リセット" onClick="init()" />
+      </form><br/>
+
+      <h2>【お題表示】</h2>
+      <div id="display">
+
+        <span id="turnnum">X</span>人目（<span id="plnum">Y</span>人中）<br/>
+        <input id="turnbutton" type="button" value="準備完了、お題を表示" onClick="displayTheme()" /><br/>
+        <br/><br/>
+        お題：<span id="themestr"> </span><br/>
+
+        <input id="themebutton" type="button" value="OK、非表示にして次の人へ" onClick="nextPlayer()" /></div>
+        <br/><br/><br/>
+        <hr/>
+
+
+      </div>
+
+      <a href="/games/times" class="next_btn">N E X T</a>
+
+
+    </div>
+
+    
+  </body>
+</html>
