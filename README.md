@@ -31,11 +31,10 @@
 * ruby '2.6.3'
 
 
-* フロントエンド：
+### フロントエンド：
 
 * HTML
 * CSS
 
-javaScriptパッケージ：
-
+* javaScript
 * jQuery
