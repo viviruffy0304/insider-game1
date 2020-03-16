@@ -2,20 +2,18 @@ class GamesController < ApplicationController
 
   def index
   end
-  
-  def new
-    @user = User.new
+
+  def words
   end
 
-  def create
-    User.create(user_params)
-    @users = User.select("name")
+  def times
   end
 
-  private
-  def user_params
-    params.permit(:name)
+  def results
   end
-  
+
+  def rules
+  end
+
 
 end
